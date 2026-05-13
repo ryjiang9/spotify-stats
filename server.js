@@ -142,4 +142,4 @@ app.get('/api/concerts', async (req, res) => {
   } catch { res.json({ events: [] }); }
 });
 
-app.listen(PORT, '127.0.0.1', () => console.log(`Running at http://127.0.0.1:${PORT}`));
+app.listen(PORT, '0.0.0.0', () => console.log(`Running at http://0.0.0.0:${PORT}`));
